@@ -1,0 +1,411 @@
+<html>
+
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<title>Evolua Tech - Radar</title>
+<link rel="shortcut icon" href="">
+<link rel="icon" type="image/x-icon" href="images/favicon.png">
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="radar.js"></script>
+<link rel="stylesheet" href="radar.css">
+</head>
+
+<body>
+<svg id="radar"></svg>
+<script>
+radar_visualization({
+  svg_id: "radar",
+  width: 1450,
+  height: 1000,
+  colors: {
+    background: "#fff",
+    grid: "#bbb",
+    inactive: "#ddd"
+  },
+  // title: "Evolua Tech — 2023",
+  quadrants: [
+    { name: "TECHNIQUES" },
+    { name: "TOOLS" },
+    { name: "LANGUAGES" },
+    { name: "FRAMEWORKS" },
+  ],
+  rings: [
+    { name: "ADOPT", color: "#F9DE01" },
+    { name: "TRIAL", color: "#fdba18" },
+    { name: "ASSESS", color: "#3FE1B1" },
+    { name: "HOLD", color: "#7C7C7C" }
+  ],
+  print_layout: true,
+  // zoomed_quadrant: 0,
+  //ENTRIES
+  entries: [
+    //Languages
+      {
+        "quadrant": 2,
+        "ring": 0,
+        "label": "Apex",
+        "active": true,
+        "moved": 0
+      },
+     {
+        "quadrant": 2,
+        "ring": 0,
+        "label": "Java",
+        "active": true,
+        "moved": 0
+      },
+   {
+        "quadrant": 2,
+        "ring": 0,
+        "label": "PL-SQL",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 2,
+        "ring": 0,
+        "label": "JavaScript",
+        "active": true,
+        "moved": 0
+      },   
+     {
+        "quadrant": 2,
+        "ring": 0,
+        "label": "HTML",
+        "active": true,
+        "moved": 0
+      },
+     {
+        "quadrant": 2,
+        "ring": 0,
+        "label": "CSS",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 2,
+        "ring": 0,
+        "label": "Python",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 2,
+        "ring": 1,
+        "label": "Typescript",
+        "active": true,
+        "moved": 0
+      },
+     {
+        "quadrant": 2,
+        "ring": 1,
+        "label": "YAML",
+        "active": true,
+        "moved": 0
+      },
+    //Frameworks
+      {
+        "quadrant": 3,
+        "ring": 0,
+        "label": "Jasper",
+        "active": true,
+        "moved": 0
+      },  
+      {
+        "quadrant": 3,
+        "ring": 0,
+        "label": "SpringBoot",
+        "active": true,
+        "moved": 0
+      },   
+      {
+        "quadrant": 3,
+        "ring": 0,
+        "label": "ReactJS",
+        "active": true,
+        "moved": 0
+      },   
+      {
+        "quadrant": 3,
+        "ring": 0,
+        "label": "Visual Force",
+        "active": true,
+        "moved": 0
+      },
+     {
+        "quadrant": 3,
+        "ring": 0,
+        "label": "Marketing Cloud",
+        "active": true,
+        "moved": 0
+      },
+     {
+        "quadrant": 3,
+        "ring": 0,
+        "label": "Fluxos",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 3,
+        "ring": 0,
+        "label": "CRM Analytcs",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 3,
+        "ring": 0,
+        "label": "LWC",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 3,
+        "ring": 0,
+        "label": "Einstein",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 3,
+        "ring": 0,
+        "label": "OmniChannel",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 3,
+        "ring": 0,
+        "label": "SFDX",
+        "active": true,
+        "moved": 0
+      },
+    //3. Tools
+    {
+        "quadrant": 1,
+        "ring": 0,
+        "label": "Tableau",
+        "active": true,
+        "moved": 0
+    },
+       {
+        "quadrant": 1,
+        "ring": 0,
+        "label": "UptimeRobot",
+        "active": true,
+        "moved": 0
+    },
+    {
+        "quadrant": 1,
+        "ring": 0,
+        "label": "PostGreSQL",
+        "active": true,
+        "moved": 0
+    },
+    {
+        "quadrant": 1,
+        "ring": 0,
+        "label": "JUnit",
+        "active": true,
+        "moved": 0
+    },
+    {
+        "quadrant": 1,
+        "ring": 1,
+        "label": "GIT Actions",
+        "active": true,
+        "moved": 0
+    },
+    {
+        "quadrant": 1,
+        "ring": 1,
+        "label": "Passbolt",
+        "active": true,
+        "moved": 0
+    },
+    {
+        "quadrant": 1,
+        "ring": 1,
+        "label": "Mantis",
+        "active": true,
+        "moved": 0
+    },
+    {
+        "quadrant": 1,
+        "ring": 1,
+        "label": "Jira",
+        "active": true,
+        "moved": 0
+    },
+    {
+        "quadrant": 1,
+        "ring": 0,
+        "label": "MostQI",
+        "active": true,
+        "moved": 0
+    },
+    {
+        "quadrant": 1,
+        "ring": 0,
+        "label": "Postman",
+        "active": true,
+        "moved": 0
+    },
+    {
+        "quadrant": 1,
+        "ring": 2,
+        "label": "Swagger",
+        "active": true,
+        "moved": 0
+    },
+    {
+        "quadrant": 1,
+        "ring": 1,
+        "label": "Docker",
+        "active": true,
+        "moved": 0
+    },
+    {
+        "quadrant": 1,
+        "ring": 1,
+        "label": "Kubernetes",
+        "active": true,
+        "moved": 0
+    },
+    {
+        "quadrant": 1,
+        "ring": 0,
+        "label": "Heroku",
+        "active": true,
+        "moved": 0
+    },
+    {
+        "quadrant": 1,
+        "ring": 0,
+        "label": "Google Cloud",
+        "active": true,
+        "moved": 0
+    },
+    {
+        "quadrant": 1,
+        "ring": 2,
+        "label": "DefectDojo",
+        "active": true,
+        "moved": 0
+    },
+    {
+        "quadrant": 1,
+        "ring": 2,
+        "label": "Owasp",
+        "active": true,
+        "moved": 0
+    },
+   //TECHQUINIES
+    {
+        "quadrant": 0,
+        "ring": 0,
+        "label": "Git",
+        "active": true,
+        "moved": 0
+      }, 
+      {
+        "quadrant": 0,
+        "ring": 0,
+        "label": "CNAB 240",
+        "active": true,
+        "moved": 0
+      }, 
+      {
+        "quadrant": 0,
+        "ring": 2,
+        "label": "Git Flow",
+        "active": true,
+        "moved": 0
+      },    
+      {
+        "quadrant": 0,
+        "ring": 1,
+        "label": "Container",
+        "active": true,
+        "moved": 0
+      },   
+      {
+        "quadrant": 0,
+        "ring": 0,
+        "label": "API Rest",
+        "active": true,
+        "moved": 0
+      },   
+      {
+        "quadrant": 0,
+        "ring": 0,
+        "label": "Gestão de mudanças",
+        "active": true,
+        "moved": 0
+      },  
+      {
+        "quadrant": 0,
+        "ring": 1,
+        "label": "Scrum",
+        "active": true,
+        "moved": 0
+      },
+     {
+        "quadrant": 0,
+        "ring": 2,
+        "label": "DevOps",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 0,
+        "ring": 2,
+        "label": "VerSem",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 0,
+        "ring": 2,
+        "label": "SOLID",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 0,
+        "ring": 2,
+        "label": "CI/CD",
+        "active": true,
+        "moved": 0
+      },
+      {
+        "quadrant": 0,
+        "ring": 1,
+        "label": "UnitTest",
+        "active": true,
+        "moved": 0
+      }
+      ]
+});
+</script>
+
+<table>
+<tr>
+  
+<td>
+<p>
+  The Evolua Tech Radar is a list of technologies, complemented by an assessment result, called ring assignment. We use four rings with the following semantics:
+</p>
+<ul>
+<li><strong>ADOPT</strong> &mdash; Technologies we have high confidence in to serve our purpose, also in large scale. Technologies with a usage culture in our Evolua production environment, low risk and recommended to be widely used.</li>
+<li><strong>TRIAL</strong> &mdash; Technologies that we have seen work with success in project work to solve a real problem; first serious usage experience that confirm benefits and can uncover limitations. TRIAL technologies are slightly more risky; some engineers in our organization walked this path and will share knowledge and experiences.</li>
+<li><strong>ASSESS</strong> &mdash; Technologies that are promising and have clear potential value-add for us; technologies worth to invest some research and prototyping efforts in to see if it has impact. ASSESS technologies have higher risks; they are often brand new and highly unproven in our organisation. You will find some engineers that have knowledge in the technology and promote it, you may even find teams that have started a prototyping effort.</li>
+<li><strong>HOLD</strong> &mdash; Technologies not recommended to be used for new projects. Technologies that we think are not (yet) worth to (further) invest in. HOLD technologies should not be used for new projects, but usually can be continued for existing projects.</li>
+</ul>
+</td>
+</tr>
+</table>
+
+</body>
+</html>
